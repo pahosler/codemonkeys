@@ -25,18 +25,32 @@
     height: 100vh;
     width: 100%;
   }
+
+  #button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 180px;
+    background-color: blue;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  #button a {
+    color: white;
+  }
 </style>
 
-<body>
+<body onload="discord()">
   <div class="container">
     <div class="box">
       <h1>Under Construction</h1>
       <img src="codemonkey.png" alt="cartoon monkey writing code" class="codemonkey" />
-      <br/>
-      <iframe src="https://discordapp.com/widget?id=698177341586800672&theme=dark" width="350" height="500"
-        allowtransparency="true" frameborder="0"></iframe>
+      <div id="button"></div>
     </div>
   </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
