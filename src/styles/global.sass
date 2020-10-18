@@ -1,0 +1,200 @@
+@charset "utf-8"
+
+$is-link: hsla(200, 68%, 49%, 1)
+$navbar-height: 1.0rem
+$navbar-item-img-max-height: 3.5rem
+
+@import "./fonts/styles.css"
+@import "../../node_modules/bulma/sass/utilities/_all"
+@import "../../node_modules/bulma/sass/base/_all"
+@import "../../node_modules/bulma/sass/components/navbar"
+@import "../../node_modules/bulma/sass/elements/box"
+@import "../../node_modules/bulma/sass/elements/button"
+@import "../../node_modules/bulma/sass/elements/container"
+@import "../../node_modules/bulma/sass/elements/image"
+@import "../../node_modules/bulma/sass/elements/table"
+@import "../../node_modules/bulma/sass/helpers/visibility"
+@import "../../node_modules/bulma/sass/layout/_all"
+
+$ea-blacker: hsla(0, 1%, 13%, 1)
+$low-starch-blue: hsla(179, 44%, 66%, 1)
+$mdst-blue: hsla(200, 68%, 49%, 1)
+$ea-black: hsla(0, 0%, 13%, 1)
+$light-grey: hsla(0,0%, 98%, 1)
+$darkest-grey: hsla(0, 0%, 8%, 1)
+$EA-ration: hsla(12, 64%, 85%, 1)
+$EA-broodmare: hsla(50, 40%, 88%, 1)
+$EA-growth: hsla(274, 21%, 61%, 1)
+$EA-elite: hsla(30, 49%, 62%, 1)
+$EA-senior: hsla(109, 23%, 64%, 1)
+$EA-low-starch: hsla(176, 40%, 76%, 1)
+
+a:visited 
+  background-color: rgba(0,0,0,0.3)
+
+.is-Gilroy-bold
+  font-family: Gilroy
+  font-weight: bold
+  font-style: normal
+
+.is-Gilroy-regular
+  font-family: Gilroy
+  font-weight: normal
+  font-style: normal
+
+.is-Gilroy-medium
+  font-family: Gilroy
+  font-weight: 500
+  font-style: normal
+
+.is-Gilroy-light
+  font-family: Gilroy
+  font-weight: 300
+  font-style: normal
+
+.is-Gilroy-extra-bold
+  font-family: Gilroy
+  font-weight: 800
+  font-style: normal
+
+.is-Gilroy-black
+  font-family: Gilroy
+  font-weight: 900
+  font-style: normal
+
+.is-Gilroy-heavy
+  font-family: Gilroy
+  font-weight: 900
+  font-style: normal
+
+.is-mdst-blue
+  background-color: $mdst-blue
+
+.is-low-starch-blue
+  background-color: $low-starch-blue
+
+.is-ea-black
+  background: $ea-black
+
+.is-ea-blacker
+  background: $ea-blacker
+
+.is-light-grey
+  background: $light-grey
+
+.is-darkest-grey
+  background: $darkest-grey
+
+.is-EA-ration
+  background: $EA-ration
+
+.is-EA-broodmare
+  background: $EA-broodmare
+
+.is-EA-elite
+  background: $EA-elite
+
+.is-EA-growth
+  background: $EA-growth
+
+.is-EA-senior
+  background: $EA-senior
+
+.button.is-border-low-starch-blue
+  border-color: $low-starch-blue
+
+.hero.has-hero-image
+  background: $darkest-grey url(../img/horseback@2x.png) center / cover
+
+.has-text-mdst-blue
+  color: $mdst-blue
+
+.has-text-low-starch-blue
+  color: $low-starch-blue
+
+.has-text-ea-black
+  color: $ea-black
+
+.has-text-ea-blacker
+  color: $ea-blacker
+
+.has-text-darket-grey
+  color: $darkest-grey
+
+.has-text-light-grey
+  color: $light-grey
+
+.has-text-EA-ration
+  color: $EA-ration
+
+.has-text-EA-broodmare
+  color: $EA-broodmare
+
+.has-text-EA-elite
+  color: $EA-elite
+
+.has-text-EA-growth
+  color: $EA-growth
+
+.has-text-EA-senior
+  color: $EA-senior
+
+.has-huge-text
+  transform: matrix(10,0,-5,10,0,0)
+
+.is-horizontal-center
+  justify-content: center
+
+.margin-top-0
+  margin-top: 0 !important
+
+.marker
+  height: 50px
+  width: 50px
+  background: url('../img/mapbox-icon.png') cover center center
+  cursor: pointer
+
+.slick-slide img
+  margin: auto
+
+.has-shadow
+  -webkit-filter: drop-shadow(15px 5px 7px rgba(0,0,0,1))
+  filter: drop-shadow(10px 15px 17px rgba(0,0,0,.9))
+
+// desktop-large
+@media only screen and (min-width: 1200px) and (max-width: 2048px)
+  // .hero-image
+  //   background-size: 1600px
+  //   background-position: -100px -350px
+  .md-content
+    height: 450px 
+    width: 70% 
+    margin-bottom: 250px 
+    padding: auto 
+
+@media only screen and (min-width: 760px) and (max-width: 1199px)
+  // .hero-image 
+  //   background-size: 1550px
+  //   background-position: -250px -250px
+  .md-content
+    height: 450px 
+    width: 70% 
+    margin-bottom: 250px 
+    padding: auto 
+
+
+// pixel2(XL) iPhone 6/7/8 plus
+@media only screen and (min-width: 400px) and (max-width: 767px)
+  // .hero-image
+  //   background-size: 750px
+  //   background-position: -200px -100px
+// iPad
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+  // .hero-image
+  //   background-size: 1600px
+  //   background-position: -500px -200px
+// iPhone 5/6/7/8/X, Galaxy S5
+@media only screen and (min-width: 320px) and (max-width: 399px)
+  // .hero-image
+  //   background-size: 900px
+  //   background-position: -355px -100px
