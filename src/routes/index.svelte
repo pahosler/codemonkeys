@@ -51,6 +51,7 @@
   <div class="hero-head" />
   <div class="hero body">
     <div class="container">
+      <img class="logo_huge" src="code-monkeys-orange-dark-large.svg" alt="code monkey dot w t f logo" width="250" />
       {#if toggleModal}
         <Register on:close={() => (toggleModal = false)}>
           <p class="is-size-3 has-text-info">Register to be notified when site goes live!</p>
@@ -65,7 +66,6 @@
             }} />
         </Register>
       {/if}
-      <img class="logo_huge" src="code-monkeys-orange-dark-large.svg" alt="code monkey dot w t f logo" width="250" />
       <p class="is-align-self-center" on:click={() => (toggleModal = true)}><a href="#">&lt register &gt</a></p>
       {#if discord !== undefined}
         <a href={discord.instant_invite} class="box has-text-centered">{discord.name}<br />

@@ -1,0 +1,1 @@
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs) [![Travis CI w/ Logo](https://img.shields.io/travis/tterb/yt2mp3/master.svg?logo=travis)](https://travis-ci.org/github/codemonkeywtf/codemonkeys) [![Discord Chat](https://img.shields.io/discord/308323056592486420.svg)](https://discord.gg/S4UPTe4)
